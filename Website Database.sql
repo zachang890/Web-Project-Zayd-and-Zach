@@ -1,14 +1,15 @@
 create database if not exists Webdatabase;
 use Webdatabase;
-create table if not exists test(
+create table if not exists colleges(
 id int auto_increment primary key,
-fName varchar(40),
-lName varchar(40),
-gender varchar(1),
-age int,
-favColor varchar(10));
-insert into test (
-fName, lName, gender, age, favColor)
+collegeName varchar(40),
+admissionStatus varchar(40),
+publicOrPrivate varchar(40),
+milesFromhome int,
+preferredCollege varchar(10));
+insert into colleges (
+collegeName, admissionStatus, publicOrPrivate, milesFromhome, preferredCollege)
 values
-('Tom','Riddle','m',43,'black'),
-('Harry','Potter','m',17,'blue');
+('UCLA','Accepted','Public',350,'Yes'),
+('SJSU','Accepted','Public',20,'Yes'),
+('USC','Accepted','Private',360,'Yes');
