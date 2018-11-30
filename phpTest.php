@@ -16,3 +16,5 @@
     while ($row = mysqli_fetch_assoc($result)) {
         echo "The ID is: " . $row['id'] . " and the Username is: " . $row['username'];
     }
+
+//The purpose of this text is to modify the current pHp file to troubleshoot problems with github/cloud9 connection
