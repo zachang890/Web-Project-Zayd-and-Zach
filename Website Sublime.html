@@ -3,25 +3,153 @@
 	<body background = "http://www.intertech.ps/images1/home_sec.jpg" id="img">
 	<p id="TimeDate"></p>
 	<head>
-		<link rel="stylesheet" href="WebProjectStyles.css">
+		<link rel="stylesheet" href="Website Style.css">
 		<script>
 		 var d = new Date();
 		 document.getElementById("TimeDate").innerHTML = d;
+		 
+		 var backs = ['url("https://cdn.nwtv.nl/wp-content/uploads/2018/07/chroma-hue.jpg")', 'url("http://www.intertech.ps/images1/home_sec.jpg")'];
+		 var backVal = 0;
+		 var appearText = 'hi there';
+		 function changeBk() {
+			if(backVal > 1)
+			{
+				backVal = 0;
+			}
+			else 
+			{
+				document.body.style.backgroundImage = backs[backVal];
+				backVal++;
+			}
+		 } 
+		 
+		 function appear() {
+		 document.getElementById("imgDiv").innerHTML = "<p> I APPEAR </p>"
+		 }
+		 
+		 function LA() {
+		 document.getElementById("LA div").innerHTML = "<p> Status: Accepted <br> Type: Public <br> Distance: 350 <br> Preferred: Yes </p>"
+		 }
 		</script>
-	</head>	
+	</head>
 	<style> 
 	
-	#AbouttheWeb {
+	#Zach {
 	color: #4ddbff;
 	font-family: helvetica;
 	font-size: 30px;
 	text-align: center;
 	}
 	
+	#Course {
+	color: #4ddbff;
+	font-family: helvetica;
+	font-size: 30px;
+	text-align: center; 
+	}
+	
+	#Website {
+	color: #00ace6;
+	font-family: helvetica;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+	#descript {
+	color: #4ddbff;
+	font-family: helvetica;
+	font-size: 25px;
+	text-align: center;
+	}
+	
+	#units {
+	color: white;
+	font-family: helvetica;
+	font-size: 30px;
+	text-align: center;
+	}
+	
+	#names {
+	color: yellow;
+	font-family: helvetica;
+	font-size: 25px;
+	text-align: center;
+	}
+	
+	#TimeDate {
+	color: yellow;
+	font-family: helvetica;
+	font-size: 25px;
+	}
+	
+	#back {
+	background-color: white;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 20px;
+	}
+	
+	#intButton {
+	background-color: yellow;
+	padding: 15px 40px;
+	}
+	
+
+	
+	#proButton {
+	background-color: yellow;
+	padding: 15px 40px;
+	}
+	
+
+	
+	#appButton {
+	background-color: yellow;
+	padding: 15px 20px;
+	}
+	
+	#LA div {
+	color: yellow;
+	}
+
+
+
 	</style>
+	<form action = 'CONNECTAction.php' method = "post">
+	</form>
 	</body>
-		<h1>College Admissions</h1>
-		<h2>Created by: Zachary Chang and Zayd Abudayyeh</h2>
+		<button id = "back" onclick="changeBk()">Change Background</button>
+		<h1> College Admissions </h1>
+		<h2> Creators </h2>
+		<p id="Zach"> Zachary Chang <br> Zayd Abudayyeh </p>
 		
-		<p id="AbouttheWeb"> This is for all those people applying to college right now. </p>
+		<p id="Course"> Course: Computer Science Principles Period 2 <br> Teacher: Lawrence Millard <br> School: American High School 2018-2019 </p>
+		
+		
+		<p id="Website"> About the Website </p>
+		<p id="descript"> For all the folks applyin to higher education </p>
+	
+		<p id="units"> Institutions: </p>
+		
+		<button id = "UCLA" onclick="LA()"type = "button"> UCLA </button> &emsp;
+		<button id = "USC" type = "button"> USC </button> &emsp;
+		<button id = "SJSU" type = "button"> San Jose State </button> &emsp;
+		<button id = "Stanford" type = "button"> Stanford </button> &emsp;
+		<button id = "MIT" type = "button"> MIT </button> &emsp;
+		<button id = "Berkeley" type = "button"> UCB </button> &emsp;
+		<button id = "CMU" type = "button"> Carnegie Mellon </button> &emsp;
+		<button id = "SLO" type = "button"> Cal Poly SLO </button> &emsp;
+		<button id = "Harvard" type = "button"> Harvard </button> &emsp;
+		
+		<div id = "LA div">
+		</div>
+		
+		
+		
+		
+
+	
 </html>
