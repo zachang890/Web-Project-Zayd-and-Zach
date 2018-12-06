@@ -12,4 +12,10 @@ collegeName, admissionStatus, publicOrPrivate, milesFromhome, preferredCollege)
 values
 ('UCLA','Accepted','Public',350,'Yes'),
 ('SJSU','Accepted','Public',20,'Yes'),
-('USC','Accepted','Private',360,'Yes');
+('USC','Accepted','Private',360,'Yes'),
+('Stanford','Deferred','Private',14,'Yes'),
+('MIT','Accepted','Private',3100,'Yes'),
+('UCB','Rejected','Public',30,'No'),
+('CMU','Rejected','Private',2600,'No'),
+('Cal Poly SLO','Accepted','Public',200,'No'),
+('Harvard','Rejected','Private',3100,'Yes');
